@@ -2,18 +2,35 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+    font-family: "Amatic SC", cursive ;
+}
+body{
+    background: rgb(90, 90, 56);
+}
+.Contenedor{
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
 }
 
-/* HEADER MENU */
-nav{
+.Contenedor > div, .Contenedor .SideBar, .Contenedor .Pie, .Contenedor .Contenido{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* HEADER  */
+.Contenedor .Header{
     background-color: black;
+    grid-column: 1/ 4;
     width:700px ;
     height:100px ;
-    position: fixed;
-    margin-left: 600px;
-}
+} */
+
 /* lOGO ENLACE */
 .Enlace{
     position: absolute;
@@ -22,25 +39,26 @@ nav{
 
 .Logo{
     height: 40px;
+    margin: 25px;
+    margin-left: 50px;
 }
 
 /* ELEMENTOS MENU */
-nav ul{
+.Header ul{
     float: right;
     margin-right: 20px;
 }
 
-nav ul li{
+.Header ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
 
-nav ul li a{
+.Header ul li a{
     color: white;
     font-size: 30px;
     padding: 7px 13px;
-    font-family: "Amatic SC", cursive ;
     border-radius: 3px;
     text-transform: uppercase;
 }
@@ -50,3 +68,42 @@ li a.active, li a:hover{
     transition: .5s;
 }
 
+.Contenedor .Contenido{
+    grid-column: span 2;
+    background: black;
+    color: white;
+    font-size: 22px;
+}
+
+.Contenedor .SideBar{
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+.Contenedor .W1,
+.Contenedor .W2{
+    background: black;
+    color: white;
+    height: 150px ;
+    width: 150;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contenedor .Pie{
+    background-color: black;
+    color: white;
+    height: 90px;
+    grid-column: span 3;
+}
+
+img{
+    height: 170px;
+    position: flex;
+    top: 50px;
+}
