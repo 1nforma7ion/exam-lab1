@@ -74,9 +74,18 @@ article{
     padding: 10px 13px;
     font-family: "Amatic SC", cursive ;
 }
+article h1{
+    font-size: 30px;
+    padding: 10px;
+}
+
+article p{
+    font-size: 22px;
+    padding: 7px 13px;
+}
 
 .ContL img{
-    padding: 10px;
+    padding: 40px;
     width: 500px;
     float: left;
     margin-right: 18px;
