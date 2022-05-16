@@ -5,8 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTO</title>
+    <link rel="stylesheet" href="Contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="Profesor:jorgeenriqueperalta@gmail.com"></a>
+    <div class="Contenedor">
+        <!-- HEADER MENU -->
+        <header class="Header">
+            <a href="index.html" class="Enlace">
+                <img src="/Images/Logo.png" alt="" class="Logo">
+            </a>
+            <ul>
+                <li><a class="Active" href="index.html">Inicio</a></li>
+                <li><a href="Historia.html">Historia</a></li>
+                <li><a href="#">Servicio</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="Email-Cont">
+            <div class="Contact-form">
+                <h3>Contacta con nosotros</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="Nombre">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="Email">
+                    </p>
+                    <p>
+                        <label>Numero</label>
+                        <input type="tel" name="Telefono">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="Asunto">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="Mensaje" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            ENVIAR
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <img src="/Images/correo.png" class="Correoimg">
+                <h4>Si no, Contactarse aca</h4>
+                <ul>
+                    <li><a href="mailto:jorgeenriqueperalta@gmail.com">Jorge Peralta</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="Pie">
+            <h3>PARCIAL 1 LABORATORIO / 2022 </h3>
+        </footer>
+    </div>
 </body>
 </html>

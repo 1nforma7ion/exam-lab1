@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Amatic SC", cursive ;
+}
+body{
+    background: rgb(90, 90, 56);
+}
+
+.Contenedor{
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+.Contenedor > div{
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+/* HEADER  */
+.Contenedor .Header{
+    background-color: black;
+    grid-column: 1/ 3;
+    width:700px ;
+    height:100px ;
+} */
+
+/* lOGO ENLACE */
+.Enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.Logo{
+    height: 40px;
+    margin: 25px;
+    margin-left: 50px;
+}
+
+/* ELEMENTOS MENU */
+.Header ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.Header ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.Header ul li a{
+    color: white;
+    font-size: 30px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    background: rgb(198, 137, 6);
+    transition: .5s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Email-Cont{
+    grid-column:span 2;
+    font-size: 22px;
+    
+}
+.Contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Contact-form form label {
+    display: block;
+    font-size: 30px;
+}
+
+.Contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.Contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.Contact-form form button,
+.Contact-form form input,
+.Contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid rgb(198, 137, 6);
+    font-size: 15px;
+}
+
+.Contact-form form button {
+    background: rgb(198, 137, 6);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.Contact-form form button:hover,
+.Contact-form form button:focus {
+    background: rgb(198, 137, 6);
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: 35px;
+}
+
+.Contenedor .Pie{
+    background-color: black;
+    color: white;
+    height: 90px;
+    grid-column: span 3;
+}
+
+.Correoimg{
+    height: 250px;
+    float: left;
+}
+
