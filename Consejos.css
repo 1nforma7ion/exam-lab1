@@ -69,15 +69,15 @@ li a.active, li a:hover{
 }
 
 .Contenedor .Contenido{
-    grid-column: span 2;
+    grid-column: span 1;
     background: black;
     color: white;
     font-size: 22px;
 }
 
 .Contenedor .SideBar{
-    grid-column: 3 / 4;
-    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
     background: black;
     color: white;
     font-size: 20px;
